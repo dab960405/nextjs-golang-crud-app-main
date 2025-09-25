@@ -1,102 +1,105 @@
-# nextjs-golang-crud-app
-🚨Simple full-stack project with nextjs and golang
 
-The purpose of creating this project is to learn for junior programmers how to implement a full stack application and create the best structure for the application.
-![HomePage](https://github.com/pooulad/nextjs-golang-crud-app/blob/main/images/home.png)
-
-## Technology list in this project
-
-in back-end:
- - Fiber
- - JWT token
- - Validator
- - Godotenv
- - Paginate
- - Postgres
- - GORM
+🚨 Proyecto full-stack con Next.js y Golang
 
 
-in front-end:
- - React hook form
- - Axios
- - React-toastify
- - Tailwindcss
- - Typescript
- - Next-auth
+Lista de tecnologías en este proyecto
 
+En el back-end:
 
-## How to run
+Fiber
 
-🚦I included the .env file intentionally in the project so that you can see how the services work and with what settings. Otherwise, it should not be displayed in the project.
+JWT token
 
-With Docker🐳:
+Validator
 
-1-Run DB and API service
-```bash
+Godotenv
+
+Paginate
+
+Postgres
+
+GORM
+
+En el front-end:
+
+React hook form
+
+Axios
+
+React-toastify
+
+Tailwindcss
+
+Typescript
+
+Next-auth
+
+Cómo ejecutar
+
+🚦 Incluí el archivo .env intencionalmente en el proyecto para que puedas ver cómo funcionan los servicios y con qué configuraciones. De lo contrario, no debería mostrarse en el proyecto.
+
+Con Docker 🐳:
+
+Ejecutar la base de datos y el servicio API
+
   docker compose up -d
-```
-2- Run nextjs
-```bash
+
+
+Ejecutar Next.js
+
   cd ./frontend
   yarn install
   yarn run dev
-```
 
-Manaul✌️:
 
-1-Create DB based on .env file(you can change it in .env file)
+Manual ✌️:
 
-2-In root of source you should run your go project
-```bash
+Crear la base de datos basada en el archivo .env (puedes cambiarlo en el archivo .env).
+
+En la raíz del proyecto fuente deberías ejecutar tu proyecto en Go
+
   go mod tidy
   go run main.go
-```
-or- live refresh with air.
 
-- install air
-```bash
+
+o ejecutar con actualización en vivo usando air.
+
+Instalar air
+
   go install github.com/air-verse/air@latest
-```
-- then run:
-```bash
-  air
-```
 
-3-In root frontend directory you should run your next project
-```bash
+
+Luego ejecutar:
+
+  air
+
+
+En la carpeta raíz del frontend deberías ejecutar tu proyecto de Next.js
+
   yarn install
   yarn run dev
-```
 
-## API Reference
-
-#### Local address
-```bash
+Referencia de API
+Dirección local
   http://127.0.0.1:8080
-```
-#### All endpoints
 
-```http
-  GET /api/users -> get all users
-  POST /api/user -> create new user
-  PATCH /api/user/:id -> update user
-  GET /api/user/:id -> get single user
-  DELETE /api/user/:id -> delete user
-  POST /api/login -> login to account
-```
+Todos los endpoints
+  GET /api/users -> obtener todos los usuarios
+  POST /api/user -> crear un nuevo usuario
+  PATCH /api/user/:id -> actualizar usuario
+  GET /api/user/:id -> obtener un usuario específico
+  DELETE /api/user/:id -> eliminar usuario
+  POST /api/login -> iniciar sesión en la cuenta
 
-#### TODO Checklist
+Lista de tareas (TODO)
 
-This section tracks the progress of implemented features in project.
+Esta sección rastrea el progreso de las funcionalidades implementadas en el proyecto.
 
-- [x] Add swagger to project.
-- [x] Add Next-auth to project -> frontend directory.
-- [x] Add all api response states(success,failure).
-- [x] Dockerize project.
+ ✅Agregar Swagger al proyecto.
 
-## Screenshots
+ ✅Agregar Next-auth al proyecto -> directorio frontend.
 
-![App SignUp Form](https://github.com/pooulad/nextjs-golang-crud-app/blob/main/images/sign-up.png)
+ ✅Agregar todos los estados de respuesta de la API (éxito, error).
 
-![App SignIn Form](https://github.com/pooulad/nextjs-golang-crud-app/blob/main/images/sign-in.png)
+ ✅Dockerizar el proyecto.
 
