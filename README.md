@@ -48,7 +48,7 @@ Crear la base de datos basada en el archivo .env (puedes cambiar las variables s
 
 En la raíz del proyecto back-end, ejecutar:
 
-bash
+```bash
 go mod tidy
 go run main.go
 O bien, ejecutar con recarga en vivo usando air:
