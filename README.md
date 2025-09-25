@@ -38,9 +38,7 @@ Ejecutar el front-end (Next.js):
 
 ```bash
 cd ./frontend
-```bash
 yarn install
-```bash
 yarn run dev
 
 Manual ✌️
