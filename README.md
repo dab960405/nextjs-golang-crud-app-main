@@ -1,107 +1,95 @@
+# 🚨 Proyecto Full-Stack con Next.js y Golang
 
-🚨 Proyecto full-stack con Next.js y Golang
+Este proyecto está diseñado como un ejemplo educativo para aprender a implementar una aplicación **full-stack** con una arquitectura limpia y escalable.
 
+---
 
-Lista de tecnologías en este proyecto
+## 🛠️ Lista de Tecnologías
 
-En el back-end:
+### Back-End
+- [Fiber](https://gofiber.io/)  
+- [JWT Token](https://jwt.io/)  
+- [Validator](https://github.com/go-playground/validator)  
+- [Godotenv](https://github.com/joho/godotenv)  
+- [Paginate](https://github.com/morkid/paginate)  
+- [Postgres](https://www.postgresql.org/)  
+- [GORM](https://gorm.io/)  
 
-Fiber
+### Front-End
+- [React Hook Form](https://react-hook-form.com/)  
+- [Axios](https://axios-http.com/)  
+- [React-Toastify](https://fkhadra.github.io/react-toastify/introduction)  
+- [TailwindCSS](https://tailwindcss.com/)  
+- [TypeScript](https://www.typescriptlang.org/)  
+- [Next-Auth](https://next-auth.js.org/)  
 
-JWT token
+---
 
-Validator
+## 🚀 Cómo ejecutar
 
-Godotenv
+⚠️ El archivo **.env** está incluido **intencionalmente** en este proyecto para mostrar la configuración de los servicios. En un entorno real no debería compartirse.
 
-Paginate
+### Con Docker 🐳
+1. Ejecutar la base de datos y el servicio API:
+   ```bash
+   docker compose up -d
+Ejecutar el front-end (Next.js):
 
-Postgres
+bash
+Copy code
+cd ./frontend
+yarn install
+yarn run dev
+Manual ✌️
+Crear la base de datos basada en el archivo .env (puedes cambiar las variables según sea necesario).
 
-GORM
+En la raíz del proyecto back-end, ejecutar:
 
-En el front-end:
+bash
+Copy code
+go mod tidy
+go run main.go
+O bien, ejecutar con actualización en vivo usando air:
 
-React hook form
+bash
+Copy code
+go install github.com/air-verse/air@latest
+air
+En la carpeta raíz del front-end, ejecutar:
 
-Axios
+bash
+Copy code
+yarn install
+yarn run dev
+📡 Referencia de API
+Dirección local: http://127.0.0.1:8080
 
-React-toastify
+Endpoints
+GET /api/users → Obtener todos los usuarios
 
-Tailwindcss
+POST /api/user → Crear un nuevo usuario
 
-Typescript
+PATCH /api/user/:id → Actualizar un usuario
 
-Next-auth
+GET /api/user/:id → Obtener un usuario específico
 
-Cómo ejecutar
+DELETE /api/user/:id → Eliminar un usuario
 
-🚦 Incluí el archivo .env intencionalmente en el proyecto para que puedas ver cómo funcionan los servicios y con qué configuraciones. De lo contrario, no debería mostrarse en el proyecto.
+POST /api/login → Iniciar sesión en la cuenta
 
-Con Docker 🐳:
+📑 API documentada en Swagger 👉 http://localhost:8080/swagger/index.html
 
-Ejecutar la base de datos y el servicio API
+✅ Lista de tareas (TODO)
+Seguimiento del progreso de funcionalidades implementadas:
 
-  docker compose up -d
+ Agregar Swagger al proyecto.
 
+ Agregar Next-Auth al proyecto → directorio frontend.
 
-Ejecutar Next.js
+ Agregar todos los estados de respuesta de la API (éxito, error).
 
-  cd ./frontend
-  yarn install
-  yarn run dev
+ Dockerizar el proyecto.
 
-
-Manual ✌️:
-
-Crear la base de datos basada en el archivo .env (puedes cambiarlo en el archivo .env).
-
-En la raíz del proyecto fuente deberías ejecutar tu proyecto en Go
-
-  go mod tidy
-  go run main.go
-
-
-o ejecutar con actualización en vivo usando air.
-
-Instalar air
-
-  go install github.com/air-verse/air@latest
-
-
-Luego ejecutar:
-
-  air
-
-
-En la carpeta raíz del frontend deberías ejecutar tu proyecto de Next.js
-
-  yarn install
-  yarn run dev
-
-Referencia de API
-Dirección local
-  http://127.0.0.1:8080
-
-Todos los endpoints
-  GET /api/users -> obtener todos los usuarios
-  POST /api/user -> crear un nuevo usuario
-  PATCH /api/user/:id -> actualizar usuario
-  GET /api/user/:id -> obtener un usuario específico
-  DELETE /api/user/:id -> eliminar usuario
-  POST /api/login -> iniciar sesión en la cuenta
-
-  API documentada en Swagger 👉 http://localhost:8080/swagger/index.html
-
-Lista de tareas (TODO)
-
-Esta sección rastrea el progreso de las funcionalidades implementadas en el proyecto.
-
- ✅Agregar Swagger al proyecto.
-
- ✅Agregar Next-auth al proyecto -> directorio frontend.
-
- ✅Agregar todos los estados de respuesta de la API (éxito, error).
-
- ✅Dockerizar el proyecto.
+sql
+Copy code
 
