@@ -37,9 +37,10 @@ Este proyecto está diseñado como un ejemplo educativo para aprender a implemen
 Ejecutar el front-end (Next.js):
 
 ```bash
-Copy code
 cd ./frontend
+```bash
 yarn install
+```bash
 yarn run dev
 
 Manual ✌️
