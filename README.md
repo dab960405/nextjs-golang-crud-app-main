@@ -33,31 +33,33 @@ Este proyecto está diseñado como un ejemplo educativo para aprender a implemen
 1. Ejecutar la base de datos y el servicio API:
    ```bash
    docker compose up -d
+
 Ejecutar el front-end (Next.js):
 
-bash
+```bash
 Copy code
 cd ./frontend
 yarn install
 yarn run dev
+
 Manual ✌️
 Crear la base de datos basada en el archivo .env (puedes cambiar las variables según sea necesario).
 
 En la raíz del proyecto back-end, ejecutar:
 
-bash
+```bash
 Copy code
 go mod tidy
 go run main.go
 O bien, ejecutar con actualización en vivo usando air:
 
-bash
+```bash
 Copy code
 go install github.com/air-verse/air@latest
 air
 En la carpeta raíz del front-end, ejecutar:
 
-bash
+```bash
 Copy code
 yarn install
 yarn run dev
