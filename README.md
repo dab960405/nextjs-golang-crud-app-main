@@ -97,8 +97,3 @@ Antes de este proyecto no tenía experiencia con este lenguaje ni con este frame
 El proceso de levantar el proyecto podría optimizarse, ya que actualmente se utilizaron dos archivos .env separados para el backend y el frontend. Sería mejor unificar o gestionar de manera más eficiente las variables de entorno.
 La implementación de la interfaz frontend aún presenta algunos bugs que no logré resolver por falta de tiempo.
 
-Antes de este proyecto no tenía experiencia con este lenguaje ni con este framework, así que me permitió reforzar mi capacidad de adaptación y aprender a aplicar nuevos conceptos en un entorno práctico.  
-
-### 🔧 Mejoras identificadas
-- El proceso de levantar el proyecto podría **optimizarse**, ya que actualmente se utilizan dos archivos `.env` separados para el backend y el frontend. Sería mejor unificar o gestionar de manera más eficiente las variables de entorno para simplificar la configuración.  
-- La implementación de la **interfaz frontend** aún presenta algunos bugs que no logré resolver por falta de tiempo.  
