@@ -91,6 +91,8 @@ Todos los endpoints
   DELETE /api/user/:id -> eliminar usuario
   POST /api/login -> iniciar sesión en la cuenta
 
+  API documentada en Swagger 👉 http://localhost:8080/swagger/index.html
+
 Lista de tareas (TODO)
 
 Esta sección rastrea el progreso de las funcionalidades implementadas en el proyecto.
