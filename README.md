@@ -52,16 +52,19 @@ En la raíz del proyecto back-end, ejecutar:
 ```bash
 go mod tidy
 go run main.go
+```
 O bien, ejecutar con recarga en vivo usando air:
 
-bash
+```bash
 go install github.com/air-verse/air@latest
 air
+```
 En la carpeta raíz del front-end:
 
-bash
+```bash
 yarn install
 yarn run dev
+```
 📡 Referencia de API
 📍 Dirección local:
 
