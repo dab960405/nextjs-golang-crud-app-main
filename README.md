@@ -1,3 +1,5 @@
+📌 README.md corregido y mejorado
+markdown
 # 🚨 Proyecto Full-Stack con Next.js y Golang
 
 Este proyecto está diseñado como un ejemplo educativo para aprender a implementar una aplicación **full-stack** con una arquitectura limpia y escalable.
@@ -27,76 +29,69 @@ Este proyecto está diseñado como un ejemplo educativo para aprender a implemen
 
 ## 🚀 Cómo ejecutar
 
-⚠️ El archivo **.env** está incluido **intencionalmente** en este proyecto para mostrar la configuración de los servicios. En un entorno real no debería compartirse.
+⚠️ El archivo **.env** está incluido **intencionalmente** en este proyecto para mostrar la configuración de los servicios. En un entorno real no debería compartirse públicamente.  
+Para producción, deberías usar un `.env.example`.
 
-### Con Docker 🐳
+---
+
+### 🔹 Con Docker 🐳
 1. Ejecutar la base de datos y el servicio API:
    ```bash
    docker compose up -d
-
 Ejecutar el front-end (Next.js):
-
-```bash
+bash
 cd ./frontend
 yarn install
 yarn run dev
-
-Manual ✌️
+🔹 Manual ✌️
 Crear la base de datos basada en el archivo .env (puedes cambiar las variables según sea necesario).
 
 En la raíz del proyecto back-end, ejecutar:
 
-```bash
-Copy code
+bash
 go mod tidy
 go run main.go
-O bien, ejecutar con actualización en vivo usando air:
+O bien, ejecutar con recarga en vivo usando air:
 
-```bash
-Copy code
+bash
 go install github.com/air-verse/air@latest
 air
-En la carpeta raíz del front-end, ejecutar:
+En la carpeta raíz del front-end:
 
-```bash
-Copy code
+bash
 yarn install
 yarn run dev
 📡 Referencia de API
-Dirección local: http://127.0.0.1:8080
+📍 Dirección local:
 
-Endpoints
-GET /api/users → Obtener todos los usuarios
-
-POST /api/user → Crear un nuevo usuario
-
-PATCH /api/user/:id → Actualizar un usuario
-
-GET /api/user/:id → Obtener un usuario específico
-
-DELETE /api/user/:id → Eliminar un usuario
-
-POST /api/login → Iniciar sesión en la cuenta
-
-📑 API documentada en Swagger 👉 http://localhost:8080/swagger/index.html
+text
+http://127.0.0.1:8080
+Endpoints principales
+http
+GET     /api/users        → Obtener todos los usuarios
+POST    /api/user         → Crear un nuevo usuario
+PATCH   /api/user/:id     → Actualizar un usuario
+GET     /api/user/:id     → Obtener un usuario específico
+DELETE  /api/user/:id     → Eliminar un usuario
+POST    /api/login        → Iniciar sesión
+📑 API documentada en Swagger 👉
+http://localhost:8080/swagger/index.html
 
 ✅ Lista de tareas (TODO)
 Seguimiento del progreso de funcionalidades implementadas:
 
  Agregar Swagger al proyecto.
-
  Agregar Next-Auth al proyecto → directorio frontend.
-
  Agregar todos los estados de respuesta de la API (éxito, error).
-
  Dockerizar el proyecto.
+📚 Aprendizaje y Mejoras
+Durante la implementación de este proyecto, aprendí los fundamentos de la sintaxis de Go (Golang), lo cual me permitió comprender cómo estructurar el código de manera más eficiente. Además, trabajé con Fiber, un framework que facilitó mucho la creación del CRUD gracias a su simplicidad y rapidez.
 
-sql
-Copy code
+Antes de este proyecto no tenía experiencia con este lenguaje ni con este framework, así que me permitió reforzar mi capacidad de adaptación y aprender a aplicar nuevos conceptos en un entorno práctico.
 
-## 📚 Aprendizaje y Mejoras
-
-Durante la implementación de este proyecto, aprendí los fundamentos de la sintaxis de **Go (Golang)**, lo cual me permitió comprender cómo estructurar el código de manera más eficiente. Además, trabajé con **Fiber**, un framework que facilitó mucho la creación del CRUD gracias a su simplicidad y rapidez.  
+🔧 Mejoras identificadas
+El proceso de levantar el proyecto podría optimizarse, ya que actualmente se utilizaron dos archivos .env separados para el backend y el frontend. Sería mejor unificar o gestionar de manera más eficiente las variables de entorno.
+La implementación de la interfaz frontend aún presenta algunos bugs que no logré resolver por falta de tiempo.
 
 Antes de este proyecto no tenía experiencia con este lenguaje ni con este framework, así que me permitió reforzar mi capacidad de adaptación y aprender a aplicar nuevos conceptos en un entorno práctico.  
 
