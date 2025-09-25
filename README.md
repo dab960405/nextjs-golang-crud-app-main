@@ -39,10 +39,11 @@ Para producción, deberías usar un `.env.example`.
    ```bash
    docker compose up -d
 Ejecutar el front-end (Next.js):
-bash
+```bash
 cd ./frontend
 yarn install
 yarn run dev
+```
 🔹 Manual ✌️
 Crear la base de datos basada en el archivo .env (puedes cambiar las variables según sea necesario).
 
