@@ -93,3 +93,12 @@ Seguimiento del progreso de funcionalidades implementadas:
 sql
 Copy code
 
+## 📚 Aprendizaje y Mejoras
+
+Durante la implementación de este proyecto, aprendí los fundamentos de la sintaxis de **Go (Golang)**, lo cual me permitió comprender cómo estructurar el código de manera más eficiente. Además, trabajé con **Fiber**, un framework que facilitó mucho la creación del CRUD gracias a su simplicidad y rapidez.  
+
+Antes de este proyecto no tenía experiencia con este lenguaje ni con este framework, así que me permitió reforzar mi capacidad de adaptación y aprender a aplicar nuevos conceptos en un entorno práctico.  
+
+### 🔧 Mejoras identificadas
+- El proceso de levantar el proyecto podría **optimizarse**, ya que actualmente se utilizan dos archivos `.env` separados para el backend y el frontend. Sería mejor unificar o gestionar de manera más eficiente las variables de entorno para simplificar la configuración.  
+- La implementación de la **interfaz frontend** aún presenta algunos bugs que no logré resolver por falta de tiempo.  
